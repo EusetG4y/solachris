@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario</title>
+    </head>
+    <body bgcolor="black" text="green">
+        <h1 align="center">Voces videojuego Ace Attorney</h1>
+        
+        <hr><hr>
+
+        <br><br>
+
+        <form align="center">
+
+            <p hidden>Texto oculto</p>
+
+            <label for="juego">Nombre del videojuego</label>
+            <input type="text" id="juego" value="Ace Attorney:Another Universe" readonly> 
+
+            <br><br>
+
+            <fieldset>
+                <legend>1. Datos personales</legend>
+
+                <label for="nombre">Introduzca su nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" maxlength="100" placeholder="Dafne Isabel Gavin Edgeworth" required tabindex="1">
+
+                <label for="Edad">Introduzca su edad: </label>
+                <input type="text" id="Edad" name="edad" maxlength="2" required tabindex="2"> <br><br>
+
+                <label for="Correo">Dirección de correo por el cual contactarle: </label>
+                <input type="text" id="Correo" name="contacto" required tabindex="3">
+            </fieldset>
+            
+            </fieldset>
+            
+            <fieldset>
+                <legend>2. Experiencia y motivación</legend>
+                <label for="Experiencia">Si tiene, cuéntenos parte de su experiencia previa como actor de voz: </label>
+                <textarea cols="40" id="Experiencia" name="experiencia"></textarea>
+
+                <label for="Motivacion">¿Cuál es su motivación para participar en este proyecto?</label>
+                <textarea cols="40" id="Motivacon" name="motivacion"></textarea> <br><br>
+
+                <label for="Doblaje">Adjunte un archivo como ejemplo del doblaje:</label>
+                <input type="file" id="Doblaje" name="archivo" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>3. Preferencias de personajes</legend>
+                ¿Qué rol/roles estaría dispuesto a interpretar? <br> 
+                <input type="checkbox" name="rol" value="prota">Protagonista <br>
+                <input type="checkbox" name="rol" value="coprota">Coprotagonista <br>
+                <input type="checkbox" name="rol" value="secu">Secundario <br> <br>
+
+                Tono de voz con el que se sienta más cómodo interpretando:
+                <input type="radio" name="voz" value="grave"> Grave
+                <input type="radio" name="voz" value="neutra"> Neutra
+                <input type="radio" name="voz" value="aguda"> Aguda
+                <input type="radio" name="voz" value="cualquiera"> Cualquiera 
+                
+                <br><br>
+                
+                <label for="idiomas">Idioma/s que domina:</label><br>
+                <select multiple name="idiomas" id="idiomas" required>
+                    <option name="idioma" value="ing">Inglés</option>
+                    <option name="idioma" value="esp">Español</option>
+                    <option name="idioma" value="al">Alemán</option>
+                    <option name="idioma" value="jap">Japonés</option>
+                    <option name="idioma" value="lat">Latín</option>
+                </select> 
+                
+                <br><br>
+
+                <label for="personaje">Elija un personaje que le gustaría interpretar:</label>
+                <select name="personaje" id="personaje">
+                    <option name="personaje" value=""></option>
+                    <option name="personaje" value="Greg">Gregory</option>
+                    <option name="personaje" value="Dafne">Dafne</option>
+                    <option name="personaje" value="Sato">Satoru</option>
+                    <option name="personaje" value="Souta">Souta</option>
+                    <option name="personaje" value="Isis">Isis</option>
+                </select>
+            </fieldset>
+
+            <br>
+
+            <input type="submit" value="Enviar solicitud" accesskey="S">
+            <input type="reset" value="Borrar datos" accesskey="R">
+            <button>Imágenes de los personajes</button>
+        </form>
+        
+        <br><br>
+
+        
+        <p>Volver a la primera página:</p>
+        <a href="aw_ut2_01.html"><img src="Imágenes/Gregory 3.png" width="300"></a>
+        <p>Volver a la segunda página</p>
+        <a href="aw_ut2_02.html"><img src="Imágenes/Dafne.jpeg" width="300"></a>
+        
+
+    </body>
+</html>
